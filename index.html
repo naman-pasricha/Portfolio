@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Naman Pasricha</title>
+  <meta name="description" content="Strategic Writer · Insight-driven Analyst · Impactful Speaker." />
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Portfolio — Naman Pasricha" />
+  <meta property="og:description" content="Strategic Writer · Insight-driven Analyst · Impactful Speaker." />
+  <meta property="og:image" content="Assets/IMG_2141.JPG" />
+  <meta property="og:url" content="https://namanpasricha.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio — Naman Pasricha" />
+  <meta name="twitter:description" content="Strategic Writer · Insight-driven Analyst · Impactful Speaker." />
+  <meta name="twitter:image" content="Assets/IMG_2141.JPG" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- GSAP for premium animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEX BACKGROUND PATTERN -->
+  <div class="hex-bg" aria-hidden="true"></div>
+
+  <!-- ============ TOP RIGHT ACTIONS ============ -->
+  <div class="top-actions">
+    <a href="https://www.linkedin.com/in/pasricha-naman/" target="_blank" class="linkedin-btn"
+      aria-label="LinkedIn Profile">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+      </svg>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+
+  <!-- ============ FLOATING NAV ============ -->
+  <nav class="floating-nav" id="main-nav">
+    <div class="nav-logo">NP</div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+      <a href="#services" class="nav-link" data-section="services">Skills</a>
+      <a href="#career" class="nav-link" data-section="career">Experience</a>
+      <a href="#portfolio" class="nav-link" data-section="portfolio">Projects</a>
+      <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+      <a href="#publications" class="nav-link" data-section="publications">Publications</a>
+
+    </div>
+    <a href="#contact" class="nav-cta">Let's Connect</a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">☀️</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </nav>
+
+  <!-- ============ MOBILE MENU OVERLAY ============ -->
+  <div class="mobile-menu-overlay" id="mobile-menu">
+    <nav class="mobile-menu-nav">
+      <a href="#hero" class="mobile-menu-link" data-section="hero">Home</a>
+      <a href="#services" class="mobile-menu-link" data-section="services">Skills</a>
+      <a href="#career" class="mobile-menu-link" data-section="career">Experience</a>
+      <a href="#portfolio" class="mobile-menu-link" data-section="portfolio">Projects</a>
+      <a href="#gallery" class="mobile-menu-link" data-section="gallery">Gallery</a>
+      <a href="#publications" class="mobile-menu-link" data-section="publications">Publications</a>
+      <a href="#contact" class="mobile-menu-link mobile-menu-cta">Let's Connect</a>
+    </nav>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-meta hero-meta-left">
+      <div class="meta-item">
+        <span class="meta-label">Based in</span>
+        <span class="meta-value">India</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Available for</span>
+        <span class="meta-value">Freelance</span>
+      </div>
+      <div class="meta-badge">
+        <span class="badge-dot"></span>
+        Open to work
+      </div>
+    </div>
+
+    <div class="hero-center">
+      <div class="hero-image-scene">
+        <div class="hero-image-wrapper" id="hero-photo">
+          <img src="Assets/IMG_2141.JPG" alt="Naman Pasricha Profile"
+            class="hero-img" />
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-name">
+          <span class="name-top">NAMAN</span>
+          <span class="name-bottom">PASRICHA</span>
+        </h1>
+        <p class="hero-title">Strategic Writer · Insight-driven Analyst · Impactful Speaker</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-meta hero-meta-right">
+      <div class="meta-item">
+        <span class="meta-label">Experience</span>
+        <span class="meta-value">2+ Years</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Projects Done</span>
+        <span class="meta-value">10+</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Publications</span>
+        <span class="meta-value">30+</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>Financial Analysis •</span>
+      <span>Power BI •</span>
+      <span>Stakeholder Management •</span>
+      <span>KPI Tracking •</span>
+      <span>Portfolio Analysis •</span>
+      <span>Process Optimization •</span>
+      <span>Tableau •</span>
+      <span>Business Strategy •</span>
+      <span>Workflow Design •</span>
+      <span>Data Visualization •</span>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="section-header">
+      <span class="section-tag">/ Skills</span>
+      <h2 class="section-title">What I Do Best</h2>
+    </div>
+    <div class="services-layout">
+      <div class="services-sticky">
+        <div class="sticky-card" id="services-target">
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=500&fit=crop" alt="Working"
+            class="sticky-img" />
+          <div class="sticky-tagline">Driven by Data.<br />Guided by Strategy.</div>
+        </div>
+      </div>
+      <div class="services-cards">
+
+        <div class="service-card" id="s1">
+          <div class="service-number">01</div>
+          <div class="service-content">
+            <h3>Financial Analysis &amp; Valuation</h3>
+            <p>Analyze financial statements, market trends, and valuation metrics (P/E, market cap, risk-return) to
+              assess company performance and support investment decision-making.</p>
+            <div class="service-tags">
+              <span>Financial Statements</span><span>Valuation Metrics</span><span>Market Trends</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" id="s2">
+          <div class="service-number">02</div>
+          <div class="service-content">
+            <h3>Investment &amp; Portfolio Analysis</h3>
+            <p>Evaluate portfolio performance, risk exposure, and asset allocation strategies to optimize returns and
+              align investments with financial objectives.</p>
+            <div class="service-tags">
+              <span>Portfolio Management</span><span>Risk Analysis</span><span>Asset Allocation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" id="s3">
+          <div class="service-number">03</div>
+          <div class="service-content">
+            <h3>Data-Driven Decision Support &amp; Business Analytics</h3>
+            <p>Leverage Power BI and Tableau to analyze business data, uncover insights, and support strategic
+              decision-making through dashboards, metrics tracking, and performance analysis.</p>
+            <div class="service-tags">
+              <span>Power BI</span><span>Tableau</span><span>Dashboards</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" id="s4">
+          <div class="service-number">04</div>
+          <div class="service-content">
+            <h3>Project Planning, Execution &amp; Milestone Tracking</h3>
+            <p>Plan and manage end-to-end project workflows, define timelines, track milestones, and ensure timely
+              delivery through structured execution and coordination.</p>
+            <div class="service-tags">
+              <span>Project Management</span><span>Timeline Planning</span><span>Milestone Tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" id="s5">
+          <div class="service-number">05</div>
+          <div class="service-content">
+            <h3>Process Optimization &amp; Workflow Design</h3>
+            <p>Identify inefficiencies in operations and design streamlined workflows to improve productivity, reduce
+              bottlenecks, and enhance overall process performance.</p>
+            <div class="service-tags">
+              <span>Workflow Design</span><span>Process Efficiency</span><span>Operations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" id="s6">
+          <div class="service-number">06</div>
+          <div class="service-content">
+            <h3>Stakeholder Coordination &amp; Cross-Functional Collaboration</h3>
+            <p>Work closely with diverse teams across analytics, consulting, and operations to gather requirements,
+              align objectives, and ensure seamless communication at every project phase.</p>
+            <div class="service-tags">
+              <span>Stakeholder Management</span><span>Cross-Functional Teams</span><span>Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" id="s7">
+          <div class="service-number">07</div>
+          <div class="service-content">
+            <h3>KPI Development &amp; Performance Monitoring</h3>
+            <p>Define measurable success metrics, track business performance using KPIs, and provide actionable insights
+              to improve outcomes and drive continuous improvement.</p>
+            <div class="service-tags">
+              <span>KPI Frameworks</span><span>Performance Tracking</span><span>Continuous Improvement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" id="s8">
+          <div class="service-number">08</div>
+          <div class="service-content">
+            <h3>Business Documentation &amp; Structured Reporting</h3>
+            <p>Create clear, structured documentation including reports, presentations, and requirement briefs to
+              support decision-making and maintain transparency across stakeholders.</p>
+            <div class="service-tags">
+              <span>Reports &amp; Presentations</span><span>Requirement Briefs</span><span>Documentation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREER / ABOUT ============ -->
+  <section class="career" id="career">
+    <div class="section-header">
+      <span class="section-tag">/ Experience</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="career-grid">
+      <!-- 1 -->
+      <div class="career-item">
+        <div class="career-year">May 2025 — Present</div>
+        <div class="career-role">
+          <h3>Business Development Associate and Consultant</h3>
+          <span class="career-company">AfterThought Feedback Services (ATFS) · Hyderabad</span>
+        </div>
+        <p>Drove client acquisition through strategic outreach and data-backed BD initiatives. Conducted market research
+          to refine product positioning and created customised proposals and pitch decks aligned with client objectives.
+          Collaborated cross-functionally to communicate value propositions of AI-driven solutions.</p>
+      </div>
+      <!-- 2 -->
+      <div class="career-item">
+        <div class="career-year">Jul 2024 — Sep 2024</div>
+        <div class="career-role">
+          <h3>Data Analyst Intern</h3>
+          <span class="career-company">Afame Technologies</span>
+        </div>
+        <p>Analysed datasets to derive actionable insights supporting business decision-making. Built reports and
+          dashboards to track key performance metrics across the organisation.</p>
+      </div>
+      <!-- 3 -->
+      <div class="career-item">
+        <div class="career-year">Feb 2024 — Mar 2024</div>
+        <div class="career-role">
+          <h3>Data Analyst Intern</h3>
+          <span class="career-company">MeriSKILL</span>
+        </div>
+        <p>Performed data cleaning and analysis pipelines to surface meaningful patterns and support project outcomes
+          for the analytics team.</p>
+      </div>
+      <!-- 4 -->
+      <div class="career-item">
+        <div class="career-year">Jul 2023 — Dec 2023</div>
+        <div class="career-role">
+          <h3>Content Creator &amp; Writer</h3>
+          <span class="career-company">Skill91 · New Delhi</span>
+        </div>
+        <p>Led a team of 5 to execute Excel-based content and data projects. Produced 50+ educational video modules,
+          designed 10+ LinkedIn carousels, created 100+ quiz questions, developed 5+ learning booklets, and coordinated
+          30+ podcast collaborations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="portfolio" id="portfolio">
+    <div class="section-header">
+      <span class="section-tag">/ Projects</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card large">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Projects/1. Investment Behavior Analysis/1_page-0001.jpg"
+            alt="Investment Behavior Analysis" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Power BI</span>
+          <h3>Investment Behavior Analysis</h3>
+          <p>A Financial Survey Dashboard</p>
+          <a href="#" class="portfolio-link project-trigger" data-title="Investment Behavior Analysis"
+            data-images="Assets/Projects/1. Investment Behavior Analysis/1_page-0001.jpg|Assets/Projects/1. Investment Behavior Analysis/1_page-0002.jpg|Assets/Projects/1. Investment Behavior Analysis/1_page-0003.jpg">View
+            Project →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Projects/2. HR Attrition Board/2_page-0001.jpg" alt="HR Attrition Board" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Power BI</span>
+          <h3>HR Attrition Board</h3>
+          <p>A dashboard to show the demographics within a workspace</p>
+          <a href="#" class="portfolio-link project-trigger" data-title="HR Attrition Board"
+            data-images="Assets/Projects/2. HR Attrition Board/2_page-0001.jpg|Assets/Projects/2. HR Attrition Board/2_page-0002.jpg|Assets/Projects/2. HR Attrition Board/2_page-0003.jpg|Assets/Projects/2. HR Attrition Board/2_page-0004.jpg|Assets/Projects/2. HR Attrition Board/2_page-0005.jpg">View
+            Project →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Projects/3. S&P 500 Market Analysis/3_page-0001.jpg" alt="S&P 500 Market Analysis" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Power BI</span>
+          <h3>S&amp;P 500 Market Analysis</h3>
+          <p>A dashboard showing market overview and risk analysis of the US market</p>
+          <a href="#" class="portfolio-link project-trigger" data-title="S&P 500 Market Analysis"
+            data-images="Assets/Projects/3. S&P 500 Market Analysis/3_page-0001.jpg|Assets/Projects/3. S&P 500 Market Analysis/3_page-0002.jpg|Assets/Projects/3. S&P 500 Market Analysis/3_page-0003.jpg|Assets/Projects/3. S&P 500 Market Analysis/3_page-0004.jpg">View
+            Project →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Projects/4. Financial Strategic Alignment Dashboard/page 2.webp"
+            alt="Financial Strategic Alignment Dashboard" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Tableau</span>
+          <h3>Financial Strategic Alignment Dashboard</h3>
+          <p>Dashboard showing goal completion from a revenue point of view and budget allocation</p>
+          <a href="#" class="portfolio-link project-trigger" data-title="Financial Strategic Alignment Dashboard"
+            data-images="Assets/Projects/4. Financial Strategic Alignment Dashboard/page 2.webp">View Project →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Projects/5. Financial Statement Dashboard/1. FS Dashboard.png"
+            alt="Financial Statement Dashboard" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Tableau</span>
+          <h3>Financial Statement Dashboard</h3>
+          <p>A dashboard showing Income vs Expenditure and Balance Sheet analysis</p>
+          <a href="#" class="portfolio-link project-trigger" data-title="Financial Statement Dashboard"
+            data-images="Assets/Projects/5. Financial Statement Dashboard/1. FS Dashboard.png|Assets/Projects/5. Financial Statement Dashboard/2. BS DashBoard.png">View
+            Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="section-header">
+      <span class="section-tag">/ Gallery</span>
+      <h2 class="section-title">Moments Captured</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Row 1-2 -->
+      <div class="gallery-item gallery-trigger reveal reveal-delay-1" data-images="Assets/Gallery Images/DSC00090.JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/DSC00090.JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-trigger reveal reveal-delay-2" data-images="Assets/Gallery Images/IMG_6183.JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/IMG_6183.JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-trigger reveal reveal-delay-3" data-images="Assets/Gallery Images/DSC02686.JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/DSC02686.JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item tall gallery-trigger reveal" data-images="Assets/Gallery Images/20240905_211121.jpg"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/20240905_211121.jpg" alt="Gallery Image" loading="lazy">
+      </div>
+      <!-- Row 2 (col 4 continued from tall above) -->
+      <div class="gallery-item tall gallery-trigger reveal" data-images="Assets/Gallery Images/IMG_2141.JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/IMG_2141.JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-trigger reveal" data-images="Assets/Gallery Images/DSC_0009.JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/DSC_0009.JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-trigger reveal" data-images="Assets/Gallery Images/IMG_7385.JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/IMG_7385.JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <!-- Row 3-4 -->
+      <div class="gallery-item tall gallery-trigger reveal" data-images="Assets/Gallery Images/IMG_0774 (1).JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/IMG_0774 (1).JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item tall gallery-trigger reveal" data-images="Assets/Gallery Images/IMG_7518(2)(1).jpg"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/IMG_7518(2)(1).jpg" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-trigger reveal" data-images="Assets/Gallery Images/20241116_171758.jpg"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/20241116_171758.jpg" alt="Gallery Image" loading="lazy">
+      </div>
+      <!-- Row 4 (col 2 continued from tall above) -->
+      <div class="gallery-item gallery-trigger reveal" data-images="Assets/Gallery Images/IMG_5104 (1).JPG"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/IMG_5104 (1).JPG" alt="Gallery Image" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-trigger reveal" data-images="Assets/Gallery Images/1775204162799.jpeg"
+        data-title="Gallery">
+        <img src="Assets/Gallery Images/1775204162799.jpeg" alt="Gallery Image" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="portfolio" id="publications">
+    <div class="section-header">
+      <span class="section-tag">/ Publications</span>
+      <h2 class="section-title">Publications</h2>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card large">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Icons for Publications/1. Vodafone Tax Dispute.jpg" alt="Vodafone Tax Dispute"
+            style="object-fit: contain; background: #fff;" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Telecom & Law</span>
+          <h3>Vodafone's Tax Dispute: A Legal Odyssey in the Telecom Sector</h3>
+          <p>A detailed look at Vodafone's prolonged tax battle with Indian authorities and its impact on the telecom
+            industry.</p>
+          <a href="https://drive.google.com/file/d/14y9fxJc0LQp9Js0OEjIvVPpyeRa2CGoT/view?usp=sharing" target="_blank"
+            class="portfolio-link">Read More →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Icons for Publications/2. 70-20-10 Rule.jpg" alt="70-20-10 Rule" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Learning & Growth</span>
+          <h3>The 70-20-10 Rule: Balancing Learning for Professional Growth</h3>
+          <p>Explains how experiential, social, and formal learning combine to drive effective professional development.
+          </p>
+          <a href="https://drive.google.com/file/d/1GEkFmdyEgEAS0OWPeYJuq721GrgcrgWy/view?usp=sharing" target="_blank"
+            class="portfolio-link">Read More →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Icons for Publications/3. Work-Life Balance.jpg" alt="Work Culture" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Work Culture</span>
+          <h3>Narayana Murthy's Call to Rethink Work Culture and Work-Life Balance</h3>
+          <p>Analyzes the debate around long working hours versus maintaining a healthy work-life balance.</p>
+          <a href="https://drive.google.com/file/d/1_CtsSfbpBL8kd0O1QG083gTUEDPPvgdE/view?usp=sharing" target="_blank"
+            class="portfolio-link">Read More →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Icons for Publications/4. Coca Cola Case Study.jpg" alt="Leonard v PepsiCo" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Business Law</span>
+          <h3>Betting on Beverages: Leonard v. PepsiCo — The Unconventional Contract Case</h3>
+          <p>Explores a famous legal case highlighting the limits of advertising as a binding contract.</p>
+          <a href="https://drive.google.com/file/d/1BsjpodTyA0DOdm6yupTLtMPBFWN9vfor/view?usp=sharing" target="_blank"
+            class="portfolio-link">Read More →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img src="Assets/Icons for Publications/5. Starbucks- Bank or a Fintech.jpg" alt="Starbucks Fintech" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Fintech</span>
+          <h3>Starbucks: From Coffee Giant to Fintech Innovator</h3>
+          <p>Examines how Starbucks leveraged its app and loyalty ecosystem to evolve into a fintech player.</p>
+          <a href="https://drive.google.com/file/d/1jz_JVNrvXy3OiPTTGY6FENtkfS8GsrdJ/view?usp=sharing" target="_blank"
+            class="portfolio-link">Read More →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img-wrap">
+          <img
+            src="Assets/Icons for Publications/Research Paper - Adapting to Remote Work Best Practices for Managing Virtual Teams.jpg"
+            alt="Remote Work" />
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Management — Research Paper</span>
+          <h3>Adapting to Remote Work: Best Practices for Managing Virtual Teams</h3>
+          <p>Provides strategies to enhance communication, productivity, and collaboration in remote work environments.
+          </p>
+          <a href="https://drive.google.com/file/d/1FOZmrkV2PmzRadatZT401olCjMcBNgZ6/view?usp=sharing" target="_blank"
+            class="portfolio-link">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <span class="section-tag" style="color:#E27500">/ Contact</span>
+      <h2 class="contact-title">Ready to Build<br />Something Great?</h2>
+      <p class="contact-sub">Let's collaborate and bring your vision to life. Drop me a message and I'll get back to you
+        within 24 hours.</p>
+      <div class="contact-actions">
+        <a href="mailto:Namanpasricha22@gmail.com" class="btn btn-primary btn-large">Send a Message</a>
+        <a href="https://calendly.com/namanpasricha22/30min" target="_blank" class="btn btn-ghost btn-large">Book a
+          Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOTTOM TICKER ============ -->
+  <div class="ticker-wrap ticker-orange">
+    <div class="ticker-track">
+      <span>Let's work together ✱</span>
+      <span>Let's work together ✱</span>
+      <span>Let's work together ✱</span>
+      <span>Let's work together ✱</span>
+      <span>Let's work together ✱</span>
+      <span>Let's work together ✱</span>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">NP</div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Navigate</h4>
+        <a href="#hero">Home</a>
+        <a href="#services">Skills</a>
+        <a href="#career">Experience</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#publications">Publications</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Connect</h4>
+        <a href="mailto:Namanpasricha22@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/pasricha-naman/" target="_blank">LinkedIn</a>
+        <a href="https://calendly.com/namanpasricha22/30min" target="_blank">Book a Call</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Naman Pasricha. All rights reserved.</span>
+      <span>Made with ❤️ &amp; lots of coffee</span>
+    </div>
+  </footer>
+
+
+  <!-- ============ LIGHTBOX MODAL ============ -->
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Project preview">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+      <div class="lightbox-header">
+        <span class="lightbox-title" id="lightbox-title"></span>
+        <span class="lightbox-counter" id="lightbox-counter"></span>
+      </div>
+      <div class="lightbox-stage">
+        <button class="lightbox-arrow lightbox-prev" id="lb-prev" aria-label="Previous">&#8592;</button>
+        <div class="lightbox-img-wrap">
+          <img class="lightbox-img" id="lightbox-img" src="" alt="Project screenshot" />
+        </div>
+        <button class="lightbox-arrow lightbox-next" id="lb-next" aria-label="Next">&#8594;</button>
+      </div>
+      <div class="lightbox-dots" id="lightbox-dots"></div>
+    </div>
+  </div>
+
+  <!-- Smooth Scroll (Lenis) -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
