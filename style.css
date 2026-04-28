@@ -958,8 +958,6 @@ body.light .service-number {
   grid-auto-flow: dense;
   gap: 16px;
   margin-top: 48px;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 1200px;
 }
 
 .gallery-item {
@@ -969,8 +967,13 @@ body.light .service-number {
   cursor: default;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  contain: layout style paint;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item.wide {
@@ -987,6 +990,9 @@ body.light .service-number {
   height: 100%;
   object-fit: cover;
   image-rendering: auto;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .gallery-item:hover {
@@ -1152,14 +1158,16 @@ body.light .footer {
    ============================================= */
 .reveal {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(32px) translateZ(0);
+  will-change: transform, opacity;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal.visible {
   opacity: 1;
-  transform: none;
+  transform: translateY(0) translateZ(0);
+  will-change: auto;
 }
 
 .reveal-delay-1 {

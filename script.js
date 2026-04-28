@@ -4,10 +4,12 @@
 
 // ── Smooth Scroll (Lenis) ──────────────────────
 const lenis = new Lenis({
-  duration: 1.2,
+  duration: 1.4,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   smoothWheel: true,
+  wheelMultiplier: 1.2,
   touchMultiplier: 2,
+  lerp: 0.08,
 });
 
 function raf(time) {
@@ -131,11 +133,15 @@ const revealObserver = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        // Remove will-change after transition to free GPU memory
+        entry.target.addEventListener('transitionend', () => {
+          entry.target.style.willChange = 'auto';
+        }, { once: true });
         revealObserver.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.08, rootMargin: '0px 0px -20px 0px' }
 );
 
 reveals.forEach(el => revealObserver.observe(el));
