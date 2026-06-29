@@ -1695,6 +1695,10 @@ body.light .mobile-menu-link:focus {
     gap: 32px;
   }
 
+  .services-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .service-card {
     padding: 32px;
     gap: 24px;
@@ -1862,6 +1866,10 @@ body.light .mobile-menu-link:focus {
 
   /* Services: stack */
   .services-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .services-cards {
     grid-template-columns: 1fr;
   }
 
