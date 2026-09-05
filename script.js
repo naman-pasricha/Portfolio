@@ -536,7 +536,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Bloomberg for Education",
       date: "June 2025",
       category: "Bloomberg",
-      image: "Assets/Certificates - Copy/Bloomberg Finance Fundamentals (BFF).webp",
+      image: "assets/certificates/bloomberg-finance-fundamentals.webp",
       tags: ["Bloomberg", "BFF", "Finance", "Finance Fundamentals"],
       aspectRatio: 1.414
     },
@@ -546,7 +546,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Bloomberg for Education",
       date: "June 2025",
       category: "Bloomberg",
-      image: "Assets/Certificates - Copy/Bloomberg Query Language (BQL).webp",
+      image: "assets/certificates/bloomberg-query-language.webp",
       tags: ["Bloomberg", "BQL", "Data Query", "Finance"],
       aspectRatio: 1.414
     },
@@ -556,7 +556,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Bloomberg for Education",
       date: "June 2025",
       category: "Bloomberg",
-      image: "Assets/Certificates - Copy/Bloomberg Market Concepts (BMC).webp",
+      image: "assets/certificates/bloomberg-market-concepts.webp",
       tags: ["Bloomberg", "BMC", "Finance", "Terminal"],
       aspectRatio: 1.414
     },
@@ -566,7 +566,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Bloomberg for Education",
       date: "June 2025",
       category: "Bloomberg",
-      image: "Assets/Certificates - Copy/Bloomberg Environmental, Social & Governance (ESG).webp",
+      image: "assets/certificates/bloomberg-esg.webp",
       tags: ["Bloomberg", "ESG", "Sustainability", "Investing"],
       aspectRatio: 1.414
     },
@@ -577,7 +577,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "National Institute of Securities Markets",
       date: "October 2024",
       category: "Finance",
-      image: "Assets/Certificates - Copy/NISM Series V-A Mutual Fund Distributors.webp",
+      image: "assets/certificates/nism-series-v-a-mutual-fund-distributors.webp",
       tags: ["Finance", "Mutual Funds", "Wealth Management", "NISM"],
       aspectRatio: 1.414
     },
@@ -588,7 +588,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Google",
       date: "August 2024",
       category: "Analytics",
-      image: "Assets/Certificates - Copy/Crash Course on Python.webp",
+      image: "assets/certificates/crash-course-python.webp",
       tags: ["Technology", "Python", "Programming", "Coding"],
       aspectRatio: 1.414
     },
@@ -599,7 +599,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "University of Melbourne",
       date: "June 2024",
       category: "Finance",
-      image: "Assets/Certificates - Copy/Cost of Capital (WACC).webp",
+      image: "assets/certificates/cost-of-capital-wacc.webp",
       tags: ["Finance", "WACC", "Corporate Finance", "Valuation"],
       aspectRatio: 1.414
     },
@@ -610,7 +610,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "University System of Georgia",
       date: "May 2024",
       category: "Business",
-      image: "Assets/Certificates - Copy/Six Sigma Yellow Belt.webp",
+      image: "assets/certificates/six-sigma-yellow-belt.webp",
       tags: ["Business", "Process Optimization", "Quality Management", "Six Sigma"],
       aspectRatio: 1.414
     },
@@ -621,7 +621,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Interactive Brokers",
       date: "April 2024",
       category: "Finance",
-      image: "Assets/Certificates - Copy/Trading Basics.webp",
+      image: "assets/certificates/trading-basics.webp",
       tags: ["Finance", "Trading", "Financial Markets"],
       aspectRatio: 1.414
     },
@@ -632,7 +632,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "IIM Ahmedabad",
       date: "March 2024",
       category: "Analytics",
-      image: "Assets/Certificates - Copy/Statistics for Business.webp",
+      image: "assets/certificates/statistics-for-business.webp",
       tags: ["Analytics", "Statistics", "Quantitative Methods", "Data"],
       aspectRatio: 1.414
     },
@@ -643,7 +643,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "365 Data Science",
       date: "February 2024",
       category: "Business",
-      image: "Assets/Certificates - Copy/365 Data Science Certificate.webp",
+      image: "assets/certificates/365-data-science-certificate.webp",
       tags: ["AI", "Data Science", "Machine Learning", "Analytics"],
       aspectRatio: 1.414
     },
@@ -654,7 +654,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "University of Melbourne",
       date: "January 2024",
       category: "Finance",
-      image: "Assets/Certificates - Copy/Language and Tools of Financial Analysis.webp",
+      image: "assets/certificates/language-and-tools-financial-analysis.webp",
       tags: ["Finance", "Accounting", "Financial Statements"],
       aspectRatio: 1.414
     },
@@ -664,7 +664,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "University of Melbourne",
       date: "January 2024",
       category: "Finance",
-      image: "Assets/Certificates - Copy/Stock Valuation.webp",
+      image: "assets/certificates/stock-valuation.webp",
       tags: ["Finance", "Valuation", "Stock Market", "Equities"],
       aspectRatio: 1.414
     },
@@ -674,7 +674,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Rice University",
       date: "January 2024",
       category: "Finance",
-      image: "Assets/Certificates - Copy/Investment Portfolio Management.webp",
+      image: "assets/certificates/investment-portfolio-management.webp",
       tags: ["Finance", "Portfolio Management", "Risk Management", "Asset Allocation"],
       aspectRatio: 1.414
     },
@@ -685,7 +685,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       issuer: "Duke University",
       date: "November 2023",
       category: "Finance",
-      image: "Assets/Certificates - Copy/Behavioural Finance.webp",
+      image: "assets/certificates/behavioural-finance.webp",
       tags: ["Finance", "Behavioral Economics", "Investing Psychology"],
       aspectRatio: 1.414
     }
