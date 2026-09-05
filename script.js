@@ -697,6 +697,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
 
   if (!gridContainer) return;
 
+  const staticCards = [...gridContainer.querySelectorAll('.cert-card')];
   let currentFilter = 'all';
   let activeCertificates = [...certificatesData];
 
@@ -723,7 +724,7 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       columnHeights.push(0);
     }
 
-    // Distribute active certificates
+    // Distribute the static cards into balanced columns.
     activeCertificates.forEach((cert) => {
       // Find the shortest column index
       let shortestIndex = 0;
@@ -735,8 +736,8 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
         }
       }
 
-      // Create card
-      const card = createCertCard(cert);
+      const card = staticCards.find((candidate) => candidate.dataset.id === String(cert.id));
+      if (!card) return;
       columns[shortestIndex].appendChild(card);
 
       // heightWeight: landscape counts as 0.75 weight, portrait as 1.4
@@ -754,37 +755,6 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
 
     // Initialize/re-run lazy loading
     initLazyLoading();
-  }
-
-  function createCertCard(cert) {
-    const card = document.createElement('div');
-    card.className = 'cert-card';
-    card.setAttribute('data-id', cert.id);
-    card.setAttribute('data-cursor', 'view');
-
-    // aspect ratio padding placeholder (primarily landscape 2506 / 1412 -> 56.3%)
-    const paddingPercent = cert.aspectRatio ? (100 / cert.aspectRatio) : 56.3;
-
-    card.innerHTML = `
-      <div class="cert-img-container shimmer" style="padding-bottom: ${paddingPercent}%;">
-        <img data-src="${cert.image}" alt="${cert.title}" class="cert-img" />
-        <div class="cert-hover-badge">
-          <div class="view-badge-text">VIEW</div>
-        </div>
-      </div>
-      <div class="cert-info">
-        <span class="cert-card-tag">${cert.category}</span>
-        <h3>${cert.title}</h3>
-        <div class="cert-card-issuer">${cert.issuer}</div>
-      </div>
-    `;
-
-    // Click event to open lightbox
-    card.addEventListener('click', () => {
-      openLightbox(cert.id);
-    });
-
-    return card;
   }
 
   // --- 3. FILTERING LOGIC ---
@@ -810,6 +780,12 @@ document.querySelectorAll('.ticker-wrap').forEach(wrap => {
       chip.classList.add('active');
       currentFilter = chip.getAttribute('data-filter');
       filterAndSearch();
+    });
+  });
+
+  staticCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      openLightbox(Number(card.dataset.id));
     });
   });
 
